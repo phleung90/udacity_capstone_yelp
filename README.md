@@ -43,3 +43,14 @@ For step 1-3, the data cleaning process recorded in the jupyter notebook. In the
 For step 4, the exct ETL process is run in airflow. The main DAG (yelp-project.py), the SQL queries (sql_queries.py) and the operators (csv_redshift.py, load_dimension.py, load_fact.py and data_quality.py) are included in this file. 
 
 The data dictionary is also includede in the jupyter notebook
+
+## Final write up 
+**Situation 1: The data was increased by 100x.**
+- For the data cleaning process, we will need to set up EMR cluster in AWS, and to load spark there to process the data.
+- For ETL process, it would not be affected as it is scalable in redshift
+
+**Situation 2: The pipelines would be run on a daily basis by 7 am every day**
+- This would be easy as we can set the schedule in airflow and run it at 7pm every day
+
+**The database needed to be accessed by 100+ people.**
+- There would be no problem as the AWS redshift is scalable
