@@ -41,8 +41,8 @@ In this case, we have 2 different forms of data source.
 For step 1-3, the data cleaning process recorded in the jupyter notebook. In the notebook, we use spark to read the source data, select the information that we need and prepare for the ETL process 
 
 For step 4, the exct ETL process is run in airflow. The main DAG (yelp-project.py), the SQL queries (sql_queries.py) and the operators (csv_redshift.py, load_dimension.py, load_fact.py and data_quality.py) are included in this file. 
+The flow as well as the result and the latest data dictionary is stored in the notebook
 
-The data dictionary is also includede in the jupyter notebook
 
 ## Final write up 
 **The choice of the technology**
