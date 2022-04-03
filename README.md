@@ -25,7 +25,7 @@ In the source data, it contains data since 2010 and there are couple of source d
 - yelp_academic_dataset_user.json
 
 In this project, as we focus in reporting the business performance in general, we do not need all the data from the source files. 
-At the same time, the data in earlier time e.g 2010, 2011, might not be able to bring many insights as there are drastic changes in internal environment and external environment, therefore we only extract the review data and check in data since 2018-01-01
+At the same time, the data in earlier time e.g 2010, 2011, might not be able to bring many insights as there are drastic changes in internal environment and external environment, therefore we only extract the review data and check in data since 2020-01-01
 
 
 
