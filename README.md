@@ -16,16 +16,19 @@ To answer the key questions, below are some of the example business that we need
 With these information, YELP can then optimize the display sequence of business partner, so that more user will come and increase the website traffic
 
 ## Data scope
-In the source data, it contains data since 2010 and there are couple of source data in different categories 
-- yelp_academic_dataset_business.json
-- yelp_academic_dataset_checkin.json
-- yelp_academic_dataset_covid_features.json
-- yelp_academic_dataset_review.json
-- yelp_academic_dataset_tip.json
-- yelp_academic_dataset_user.json
+Most of the source files are from the YELP dataset, which is available here: https://www.yelp.com/dataset
 
-In this project, as we focus in reporting the business performance in general, we do not need all the data from the source files. 
-At the same time, the data in earlier time e.g 2010, 2011, might not be able to bring many insights as there are drastic changes in internal environment and external environment, therefore we only extract the review data and check in data since 2020-01-01
+In this project, the following files from the dataset are used:
+
+business.json -- Contains business data including location data, attributes, and categories
+review.json -- Contains full review text data including the user_id that wrote the review and the business_id the review is written for
+user.json -- User data including the user's friend mapping and all the metadata associated with the user.
+checkin.json -- Checkins on a business.
+tip.json -- Tips written by a user on a business. Tips are shorter than reviews and tend to convey quick suggestions
+
+And to extend the information of location, we also use the csv file here: https://public.opendatasoft.com/explore/dataset/us-cities-demographics/export/
+
+In this case, we have 2 different forms of data source.
 
 
 
